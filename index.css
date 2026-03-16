@@ -1,4 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-style:  "Roboto", sans-serif;
+ 
+}
 
 
 .hero{
@@ -53,4 +58,29 @@ animation:scroll 20s linear infinite;
 }
 .lead{
     color: rgb(210, 136, 204);
+}
+
+
+
+/* Lift and shadow on hover / tap */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.service-card:active,
+.service-card:focus {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Smooth hover/tap animation */
+.fee-card{
+transition: all 0.3s ease;
+border-radius:12px;
+}
+
+.fee-card:hover{
+transform: translateY(-10px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
