@@ -7,91 +7,92 @@
 <title>IJMB Application Payment</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://js.paystack.co/v1/inline.js"></script>
 <link rel="stylesheet" href="index.css">
+
+<style>
+.scroll-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scroll-text span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.payment-card {
+  border-radius: 15px;
+}
+
+.bank-box {
+  background: #f8f9fa;
+  border-left: 5px solid #0d6efd;
+}
+</style>
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">IJMB Program</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-      data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><a class="btn btn-light text-primary" href="#register">Register</a></li>
-      </ul>
-    </div>
   </div>
 </nav>
 
-<div class="container mt-4">
+<!-- HERO -->
+<div class="container mt-5 pt-5 text-center">
+  <img src="image/graphic.jpeg" class="img-fluid rounded shadow-sm" alt="IJMB Banner">
 
-  <div class="text-center">
-    <img src="image/graphic.jpeg" class="img-fluid " alt="IJMB Banner">
-  </div>
-
-  <div class="text-center mt-3">
-    <h4 class="fw-bold">Secure Your Admission Today</h4>
-    <p class="text-muted">
-      <!-- Complete your IJMB application and take the next step toward gaining direct entry into 200 level. -->
-    </p>
-  </div>
-
+  <h3 class="fw-bold mt-3">Secure Your Admission Today</h3>
+  <p class="text-muted">
+    Complete your IJMB application and take the next step toward gaining direct entry into 200 level.
+  </p>
 </div>
-<div class="scroll-text bg-primary text-white">
-  <span>IJMB registration begins on the 20th of this month to 30th. Do well and apply now.</span>
+
+<!-- SCROLL TEXT -->
+<div class="scroll-text bg-primary text-white py-2 mt-3">
+  <span>IJMB registration begins on the 20th to 30th. Apply now to secure your admission.</span>
 </div>
-<!-- Main Section -->
+
+<!-- MAIN -->
 <div class="container my-5">
 
-  <!-- Title -->
+  <!-- TITLE -->
   <div class="text-center mb-5">
     <h2 class="fw-bold">Complete Your Registration</h2>
-    <p class="lead">Choose your payment method and complete your IJMB application securely.</p>
+    <p class="lead">Follow the steps below to complete your application successfully.</p>
   </div>
 
-  <!-- Payment Options -->
   <div class="row g-4">
 
-    <!-- Paystack -->
-    <div class="col-md-6  animate__pulse animate__infinite ">
-      <div class="payment-card p-4 shadow-sm h-100 text-center">
-        <h4 class="fw-bold mb-3">Pay with Paystack</h4>
-        <p>Pay securely using your ATM card, bank, or USSD.</p>
-        <h5 class="text-primary fw-bold">₦20,000</h5>
-        <button class="btn btn-primary btn-lg w-100 mt-3">
-          Disable
-        </button>
-      </div>
-    </div>
-
-    <!-- Bank Transfer -->
-    <div class="col-md-6  ">
+    <!-- BANK TRANSFER (MAIN METHOD) -->
+    <div class="col-lg-6">
       <div class="payment-card p-4 shadow-sm h-100">
-        <h4 class="fw-bold mb-3">Bank Transfer</h4>
 
-        <div class="border rounded p-3 mb-3 ">
-          <h6 class="fw-bold">ACCESS BANK</h6>
+        <h4 class="fw-bold mb-3 text-primary">Bank Transfer</h4>
+
+        <div class="bank-box p-3 rounded mb-3">
+          <h6 class="fw-bold">Bank Name: ACCESS BANK</h6>
           <p class="mb-1">Account Number: <strong>0110608584</strong></p>
-          <p>Account Name: <strong>Abdullateef Sikirat</strong></p>
+          <p class="mb-0">Account Name: <strong>Abdullateef Sikirat</strong></p>
         </div>
- 
-        <!-- <p class="small"> -->
-          <!-- After payment, send your receipt via: -->
-        <!-- </p> -->
-       <p class="text-danger fw-bold">
-After payment, send your receipt via WhatsApp or upload it for verification.
-</p>
+
+        <p class="text-danger fw-bold">
+          After payment, click the button below to submit your payment details and upload your receipt.
+        </p>
+
+        <a href="https://forms.gle/9zjgaMoQZzosbNNU9" target="_blank" class="btn btn-primary w-100 mb-3">
+          Submit Payment Details
+        </a>
+
         <p class="small mb-1">
-          WhatsApp:
+          Need help? WhatsApp:
           <a href="https://wa.me/2349038048560" target="_blank">
             +234 903 804 8560
           </a>
@@ -99,28 +100,50 @@ After payment, send your receipt via WhatsApp or upload it for verification.
 
         <p class="small">
           Email:
-          <a href="mailto:brainwaveacademy891@gmail.com.com">
-            brainwaveawacademy891@gmail.com
+          <a href="mailto:brainwaveacademy891@gmail.com">
+            brainwaveacademy891@gmail.com
           </a>
         </p>
+
+      </div>
+    </div>
+
+    <!-- PAYSTACK (COMING SOON) -->
+    <div class="col-lg-6">
+      <div class="payment-card p-4 shadow-sm h-100 text-center">
+
+        <h4 class="fw-bold mb-3">Online Payment</h4>
+        <p>Pay securely using ATM card, bank transfer, or USSD.</p>
+
+        <h5 class="text-primary fw-bold">₦20,000</h5>
+
+        <button class="btn btn-outline-secondary w-100 mt-3" disabled>
+          Coming Soon
+        </button>
+
       </div>
     </div>
 
   </div>
 
-  <!-- Steps -->
+  <!-- STEPS -->
   <div class="payment-card mt-5 p-4 shadow-sm">
-    <h4 class="fw-bold mb-3">How to Complete Registration</h4>
-    <ol class="mb-0">
-      <li>Choose your preferred payment method.</li>
-      <li>Complete your payment.</li>
-      <li>Fill out the application form.</li>
-      <li>Print your admission letter.</li>
+    <h4 class="fw-bold mb-3">How to Complete Your Registration</h4>
+    <ol>
+      <li>Make payment to the bank account above.</li>
+      <li>Click on "Submit Payment Details".</li>
+      <li>Fill the form and upload your receipt.</li>
+      <li>Your payment will be verified within 24 hours.</li>
+      <li>You will receive confirmation and next steps.</li>
     </ol>
   </div>
-<!-- fffff -->
 
-  <!-- FAQ (Accordion Toggle) -->
+  <!-- TRUST SECTION -->
+  <div class="alert alert-success mt-4">
+    ✅ Your payment is secure and will be verified manually before admission processing begins.
+  </div>
+
+  <!-- FAQ -->
   <div class="mt-5">
     <h4 class="fw-bold mb-4 text-center">Frequently Asked Questions</h4>
 
@@ -129,12 +152,12 @@ After payment, send your receipt via WhatsApp or upload it for verification.
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
-            How can I pay with Paystack?
+            How long does payment confirmation take?
           </button>
         </h2>
         <div id="faq1" class="accordion-collapse collapse show">
           <div class="accordion-body">
-            You can pay securely using your debit/credit card via Paystack.
+            Payment is verified within 24 hours after submission.
           </div>
         </div>
       </div>
@@ -142,12 +165,12 @@ After payment, send your receipt via WhatsApp or upload it for verification.
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
-            What should I do after bank transfer?
+            What happens after payment?
           </button>
         </h2>
         <div id="faq2" class="accordion-collapse collapse">
           <div class="accordion-body">
-            Send your payment receipt via WhatsApp or email for verification.
+            You will receive confirmation and be guided on completing your application.
           </div>
         </div>
       </div>
@@ -155,23 +178,10 @@ After payment, send your receipt via WhatsApp or upload it for verification.
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
-            How long does confirmation take?
-          </button>
-        </h2>
-        <div id="faq3" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            Confirmation is usually sent within 24 hours.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
             Is the fee refundable?
           </button>
         </h2>
-        <div id="faq4" class="accordion-collapse collapse">
+        <div id="faq3" class="accordion-collapse collapse">
           <div class="accordion-body">
             No, the application fee is non-refundable.
           </div>
@@ -183,10 +193,7 @@ After payment, send your receipt via WhatsApp or upload it for verification.
 
 </div>
 
-<!-- Footer -->
-<footer class="bg-primary text-white text-center py-3">
-  &copy; 2026 IJMB Program | All Rights Reserved
-</footer>
+<!-- FOOTER -->
 <footer class="bg-primary text-white text-center py-3">
   &copy; 2026 IJMB Program | All Rights Reserved
 </footer>

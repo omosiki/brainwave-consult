@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IJMB Application Form 2026/2027</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+      background-color: #f4f6f9;
+    }
+    .form-section {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">IJMB Program</a>
+  </div>
+</nav>
+
+<div class="container my-5">
+
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">IJMB Application Form 2026/2027</h2>
+    <p>Complete the form below to apply for IJMB Direct Entry Programme.</p>
+  </div>
+
+  <form class="form-section">
+    <!-- Personal Information -->
+    <h4 class="mb-3">Personal Information</h4>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullname" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+    </div>
+ <div class="row mb-3">
+      <div class="col-md-6">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phonenumber" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="dateofbirth" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label class="form-label">State of Origin:</label>
+        <input type="text" class="form-control" id="state" required>
+      </div>
+      <div class="col-md-6">
+         <label class="form-label">Local Gov:</label>
+        <input type="text" class="form-control" id="localgovt" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="form-label">Marital Status</label>
+        <select id="marital-status" class="form-select" required>
+        <option value="married">Married</option>
+        <option value="single">Single</option>
+        </select>
+     </div>
+      <!-- <div class="col-md-6">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" required>
+      </div> -->
+    </div>
+     <div class="mb-3">
+      <label class="form-label">Residential Address</label>
+      <textarea class="form-control" rows="2" id="address" required></textarea>
+    </div>
+
+    <!-- Academic Information -->
+    <hr class="my-4">
+    <h4 class="mb-3">Academic Information</h4>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label class="form-label">O'Level Exam Type</label>
+        <select class="form-select" id="Olevel" required>
+          <option value="">Select</option>
+          <option>WAEC</option>
+          <option>NECO</option>
+          <option>NABTEB</option>
+            </select>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Exam Year</label>
+        <input type="number" class="form-control" placeholder="e.g. 2024" id="yearofexam" required>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Intended Course of Study</label>
+      <input type="text" class="form-control" id="intended-course" required>
+    </div>
+    <!-- Program Selection -->
+    <hr class="my-4">
+    <h4 class="mb-3">Program Selection</h4>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label class="form-label">Subject Combination</label>
+        <select class="form-select" id="subject-combination" required>
+          <option value="">Select</option>
+          <option>Science</option>
+          <option>Arts</option>
+          <option>Commercial</option>
+        </select>
+      </div>
+        <div class="col-md-6">
+        <label class="form-label">Preferred Study Centre</label>
+        <!-- <input type="text" class="form-control" placeholder="e.g. Kano Centre"   required> -->
+        <select class="form-select" id="">
+            <!-- <option value="">Centre</option> -->
+             <option value="">Mandalla Center</option>
+              <option value="">Gwagwalada Center</option>
+        </select>
+      </div> 
+    </div>
+
+    <!-- Upload Section -->
+    <hr class="my-4">
+    <h4 class="mb-3">Upload Passport</h4>
+
+    <div class="mb-3">
+      <input type="file" class="form-control" id="file" required>
+    </div>
+   
+    <!-- Declaration -->
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="checkbox" required>
+      <label class="form-check-label">
+        I declare that the information provided is correct.
+      </label>
+      </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-success btn-lg">Submit Application</button>
+    </div>
+
+  </form>
+
+</div>
+
+<footer class="bg-primary text-white text-center py-3">
+  &copy; 2026 IJMB Program. All Rights Reserved.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="register.js" defer></script>
+</body>
+</html>
