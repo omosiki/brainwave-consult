@@ -64,6 +64,14 @@
   100%{transform:translateX(-100%);}
 }
 
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+  object-fit: cover;
+}
+
 /* MOBILE FIX */
 @media (max-width:768px){
 
@@ -77,7 +85,6 @@
     margin:auto;
     padding-bottom: 30px;
   }
-
   /* Sticky announcement bar */
   .scroll-text{
     position:fixed;
