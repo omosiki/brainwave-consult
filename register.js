@@ -11,3 +11,7 @@ import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "http
     measurementId: "G-Z4RS7FFXG2"
   };
 
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app)
+  const storage = getStorage(app)
