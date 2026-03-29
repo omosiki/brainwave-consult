@@ -15,3 +15,28 @@ import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "http
   const app = initializeApp(firebaseConfig);
   const database = getDatabase(app)
   const storage = getStorage(app)
+  const form = document.querySelector(".form-section");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    console.log("form submitted")
+    try {
+
+        const fullname = document.getElementById("fullname").value;
+        const email = document.getElementById("email").value;
+        const phoneNumber = document.getElementById("phonenumber").value;
+        const dirthofBirth = document.getElementById("dateofbirth").value;
+        const state = document.getElementById("state").value;
+        const localGovt = document.getElementById("localgovt").value;
+        const maritalStatus = document.getElementById("marital-status").value;  const address = document.getElementById("address").value;
+        const levelResult = document.getElementById("Olevel").value;
+        const yearofExam = document.getElementById("yearofexam").value;
+        const intendedCourse = document.getElementById("intended-course").value;
+        const subject = document.getElementById("subject-combination").value;
+        const fileUpload = document.getElementById("file").files[0];
+        const checkbox = document.getElementById("checkbox").checked;
+
+        if (!fileUpload) {
+            alert("Please upload a file");
+            return;
+        }
