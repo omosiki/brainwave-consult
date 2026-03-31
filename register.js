@@ -74,4 +74,8 @@ form.addEventListener("submit", async (e) => {
         console.error(error);
         alert("Something went wrong ❌");
     }
+      } catch (error) {
+        console.error(error);
+        alert("Something went wrong ❌");
+    }
   });
