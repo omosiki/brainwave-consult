@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IJMB Payment - Modern</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body { background:#f4f7fc; font-family:'Segoe UI',sans-serif; }
+
+.hero {
+  background: linear-gradient(135deg,#0d6efd,#6610f2);
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+  border-radius:0 0 40px 40px;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.bank-card {
+  border-left:5px solid #0d6efd;
+  background:#fff;
+  border-radius:15px;
+}
+
+.step-box {
+  text-align:center;
+}
+
+.step-icon {
+  font-size:30px;
+  color:#0d6efd;
+}
+
+.floating-whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h2 class="fw-bold">Secure Your IJMB Admission</h2>
+  <p>Fast, simple and verified registration process</p>
+</div>
+
+<div class="container my-5">
+
+  <div class="row g-4">
+
+    <!-- LEFT (PROCESS STEPS) -->
+    <div class="col-lg-5">
+      <div class="glass-card p-4 h-100">
+        <h5 class="fw-bold mb-4">Simple Payment Process</h5>
+
+        <div class="step-box mb-4">
+          <div class="step-icon"><i class="fas fa-money-bill-wave"></i></div>
+          <p class="mb-0">Make Bank Transfer</p>
+        </div>
+
+        <div class="step-box mb-4">
+          <div class="step-icon"><i class="fas fa-upload"></i></div>
+          <p class="mb-0">Submit Payment Details</p>
+        </div>
+
+        <div class="step-box mb-4">
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+          <p class="mb-0">Get Verified</p>
+        </div>
+
+        <div class="step-box">
+          <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+          <p class="mb-0">Start Your Admission</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT (PAYMENT CARD) -->
+    <div class="col-lg-7">
+      <div class="glass-card p-4">
+
+        <h4 class="fw-bold mb-3 text-primary">Bank Transfer Details</h4>
+
+        <div class="bank-card p-3 mb-4">
+          <p class="mb-1"><strong>Bank:</strong> ACCESS BANK</p>
+          <p class="mb-1"><strong>Account No:</strong> 0110608584</p>
+          <p class="mb-0"><strong>Name:</strong> Abdullateef Sikirat</p>
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+          <strong>JUPEB Form Fee</strong>
+          <strong>₦25,000</strong>
+        </div>
+
+        <div class="alert alert-warning">
+          ⚠️ Send exact amount and keep your receipt safe
+        </div>
+
+        <a href="https://forms.gle/9zjgaMoQZzosbNNU9" target="_blank" class="btn btn-primary w-100 mb-3">
+          Submit Payment Details
+        </a>
+
+        <div class="text-center">
+          <small>Payment confirmation within 24 hours</small>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ONLINE COMING SOON -->
+  <div class="glass-card p-4 text-center mt-5">
+    <h5 class="fw-bold">Online Payment</h5>
+    <p>Pay with card, transfer or USSD</p>
+    <button class="btn btn-outline-secondary" disabled>Coming Soon</button>
+  </div>
+
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/2349038048560" target="_blank" class="floating-whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
