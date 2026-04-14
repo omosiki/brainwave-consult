@@ -42,8 +42,8 @@ form.addEventListener("submit", async (e) => {
             return;
         } 
         
-        // Upload file
-        // const fileRef = storageRef(storage, "applications/" + fileUpload.name);
+        Upload file
+        const fileRef = storageRef(storage, "applications/" + fileUpload.name);
         
         // Upload file
       const fileRef = storageRef(storage, "applications/" + Date.now() + "_" + fileUpload.name);
