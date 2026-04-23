@@ -36,14 +36,11 @@ form.addEventListener("submit", async (e) => {
         const subject = document.getElementById("subject-combination").value;
         const fileUpload = document.getElementById("file").files[0];
         const checkbox = document.getElementById("checkbox").checked;
-
         if (!fileUpload) {
             alert("Please upload a file");
             return;
         } 
-        
-        Upload file
-        const fileRef = storageRef(storage, "applications/" + fileUpload.name);
+ 
         
         // Upload file
       const fileRef = storageRef(storage, "applications/" + Date.now() + "_" + fileUpload.name);
