@@ -40,8 +40,6 @@ form.addEventListener("submit", async (e) => {
             alert("Please upload a file");
             return;
         } 
- 
-        
         // Upload file
       const fileRef = storageRef(storage, "applications/" + Date.now() + "_" + fileUpload.name);
       await uploadBytes(fileRef, fileUpload);
