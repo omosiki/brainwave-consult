@@ -159,6 +159,37 @@ object-fit:cover;
 /* AboutUs Section */
 
 
+.about-link-box{
+    background:#fff;
+    padding:60px 30px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
 
+.about-link-box h2{
+    color:#071c3c;
+}
+
+.about-link-box .btn{
+    border-radius:12px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.about-link-box .btn:hover{
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+    .about-link-box{
+        padding:40px 20px;
+    }
+
+    .about-link-box h2{
+        font-size:28px;
+    }
+
+}
 
 
