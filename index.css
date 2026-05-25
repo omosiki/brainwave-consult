@@ -98,9 +98,7 @@ h1, h2, h3 {
   }
 
   /* Prevent overlap */
-  body{
-    /* padding-top:110px; */
-  }
+  
 }
 
 /* LEAD TEXT COLOR */
@@ -216,5 +214,6 @@ object-fit:cover;
 
     .founder-text{
         font-size:15px;
+
     }
   }
