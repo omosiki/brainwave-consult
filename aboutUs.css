@@ -83,6 +83,7 @@ h1, h2, h3 {
     align-items:center;
     justify-content:center;
     position:relative;
+    align-items: center;
 }
 
 .icon-box i{
